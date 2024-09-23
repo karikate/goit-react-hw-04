@@ -1,0 +1,21 @@
+.wrapper {
+  display: block;
+  background-color: blue;
+  width: 100%;
+}
+.form {
+  display: flex;
+  gap: 30px;
+  place-items: center;
+  margin: 0 30%;
+  width: 500px;
+  height: 70px;
+  border-radius: 30px;
+  background: white;
+}
+
+.input {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 30px;
+}
