@@ -1,13 +1,18 @@
 .wrapper {
-  display: block;
   background-color: blue;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+  font-weight: 700;
+  place-items: center;
 }
 .form {
   display: flex;
   gap: 30px;
   place-items: center;
-  margin: 0 30%;
+  margin: 0 auto;
   width: 500px;
   height: 70px;
   border-radius: 30px;
