@@ -7,12 +7,11 @@ const ImageModal = ({ handleOpenModal, isOpen, handleCloseModal, photo }) => {
 
   return (
     <div className={s.backdrop}>
-      <button onClick={handleOpenModal}>Trigger Modal</button>
+      <button onClick={handleOpenModal}></button>
       <ReactModal
         isOpen={isOpen}
         onRequestClose={handleCloseModal}
         shouldCloseOnOverlayClick={true}
-        contentLabel="Minimal Modal Example"
         ariaHideApp={false}
         className={s.modal}
         overlayClassName={s.overlay}
