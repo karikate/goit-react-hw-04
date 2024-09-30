@@ -1,6 +1,6 @@
 import { Field, Form, Formik } from "formik";
 import s from "./SearchBar.module.css";
-import { IoIosSearch } from "react-icons/io";
+import { FaSearch } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 
 const SearchBar = ({ setQuery }) => {
@@ -38,8 +38,7 @@ const SearchBar = ({ setQuery }) => {
                     },
                   }}
                 />
-
-                <IoIosSearch />
+                <FaSearch />
               </button>
             </Form>
           </Formik>

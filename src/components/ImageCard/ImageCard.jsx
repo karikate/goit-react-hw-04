@@ -1,7 +1,6 @@
 const ImageCard = ({ photo, openModal }) => {
   return (
     <div>
-      {/* <a href={photo.urls.regular}> */}
       <img
         src={photo.urls.small}
         alt={photo.alt_description}
@@ -10,7 +9,6 @@ const ImageCard = ({ photo, openModal }) => {
         height="300"
         onClick={openModal}
       />
-      {/* </a> */}
     </div>
   );
 };

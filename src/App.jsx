@@ -49,6 +49,7 @@ const App = () => {
     setPhotoId(photo);
     setIsOpen(true);
   };
+
   const handleCloseModal = () => setIsOpen(false);
 
   return (

@@ -1,10 +1,12 @@
 import ReactModal from "react-modal";
+import s from "./ImageModal.module.css";
+import { FcLike } from "react-icons/fc";
 
 const ImageModal = ({ handleOpenModal, isOpen, handleCloseModal, photo }) => {
-  const { urls, alt_description } = photo;
+  const { urls, alt_description, description, user, likes } = photo;
 
   return (
-    <div>
+    <div className={s.backdrop}>
       <button onClick={handleOpenModal}>Trigger Modal</button>
       <ReactModal
         isOpen={isOpen}
@@ -12,8 +14,18 @@ const ImageModal = ({ handleOpenModal, isOpen, handleCloseModal, photo }) => {
         shouldCloseOnOverlayClick={true}
         contentLabel="Minimal Modal Example"
         ariaHideApp={false}
+        className={s.modal}
+        overlayClassName={s.overlay}
       >
         <img src={urls.regular} alt={alt_description} />
+        <div className={s.info}>
+          <p>Descriprion: {description}</p>
+          <p>Author: {user.name}</p>
+          <p>Location: {user.location}</p>
+          <p>
+            <FcLike /> {likes}
+          </p>
+        </div>
       </ReactModal>
     </div>
   );
