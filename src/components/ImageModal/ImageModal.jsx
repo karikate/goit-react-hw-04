@@ -2,12 +2,11 @@ import ReactModal from "react-modal";
 import s from "./ImageModal.module.css";
 import { FcLike } from "react-icons/fc";
 
-const ImageModal = ({ handleOpenModal, isOpen, handleCloseModal, photo }) => {
+const ImageModal = ({ isOpen, handleCloseModal, photo }) => {
   const { urls, alt_description, description, user, likes } = photo;
 
   return (
     <div className={s.backdrop}>
-      <button onClick={handleOpenModal}></button>
       <ReactModal
         isOpen={isOpen}
         onRequestClose={handleCloseModal}
